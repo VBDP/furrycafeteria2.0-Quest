@@ -1,0 +1,462 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8923143138955338747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8923143138955338750}
+  - component: {fileID: 8923143138955338745}
+  - component: {fileID: 8923143138955338744}
+  - component: {fileID: 8923143138955338746}
+  m_Layer: 0
+  m_Name: SyncedPlayerDeviceTracker ObjectSync
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8923143138955338750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923143138955338747}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8923143138955338745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923143138955338747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd4a7956009f7d429a09b8371329c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerInstance:
+    proximity: 2
+    interactText: Use
+    triggerDataInstance:
+      version: 6
+      updateOrder: 0
+      autoSetSyncMode: 1
+      programSyncMode: 0
+      programName: 
+      events:
+      - name: 
+        eventId: ac95fef5-31bb-4511-a03c-b25c83355674
+        eventInstance:
+          actionType:
+            directEvent: Event_Update
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Every frame, set position and rotation of this object to the
+              position of the owning player's tracking device. For this example,
+              it is the player's head/hmd. Since this is gated by Owner, no other
+              player should ever update the position. VRCObjectSync will take care
+              of syncing it to everyone.
+        actionInstances:
+        - actionType:
+            directEvent: CyanTriggerSpecial_ReturnIfDisabled
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: Due to a bug in Udon, disabling an udon behaviour in start does
+              not prevent the update event from firing for that frame. This check
+              will ensure that the tracker is not updated to track the local player
+              for one frame.
+        - actionType:
+            directEvent: 
+            guid: 6aa4baca-f522-46bc-9fe4-5e16b4ebed5d
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: trackingType
+            variableID: c421e22a-cc48-4e45-88e1-4aaec004d67e
+            data:
+              objEncoded: Ai8AAAAAATUAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBQAGwAYQB5AGUAcgBBAHAAaQArAFQAcgBhAGMAawBpAG4AZwBEAGEAdABhAFQAeQBwAGUALAAgAFYAUgBDAFMARABLAEIAYQBzAGUAAAAAAB4AAAAAAAAAAAU=
+              unityObjects: []
+          - isVariable: 1
+            name: This Transform
+            variableID: _this_transform
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 1
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _ClaimOwnership
+        eventId: 550bced8-f9cf-4ad3-b569-3d55ce4d3cd1
+        eventInstance:
+          actionType:
+            directEvent: Event_Custom
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Claim ownership over this player tracker, making it follow the
+              local player. Call this if you want to start tracking a specific local
+              player.
+        actionInstances:
+        - actionType:
+            directEvent: VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: This GameObject
+            variableID: _this_gameobject
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: 
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+              unityObjects: []
+          multiInput:
+          - isVariable: 1
+            name: This UdonBehaviour
+            variableID: _this_udonbehaviour
+            data:
+              objEncoded: 
+              unityObjects: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _RemoveOwnership
+        eventId: efee64fc-6987-4c6d-b2e4-f1221d75821c
+        eventInstance:
+          actionType:
+            directEvent: Event_Custom
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: If you are the tracked or owning player of this tracker, stop
+              tracking and reset the tracker.
+        actionInstances:
+        - actionType:
+            directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: 
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AUgBlAHMAZQB0AAU=
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABBgAAAF8AUgBlAHMAZQB0ACcBEAAAAGUAdgBlAG4AdABEAGkAcwBwAGwAYQB5AE4AYQBtAGUAAQYAAABfAFIAZQBzAGUAdAABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAAAAAAAAAAAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAAAAAAAAAAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYAAAAAAAAAAAcFBQ==
+              unityObjects: []
+          multiInput:
+          - isVariable: 1
+            name: This UdonBehaviour
+            variableID: _this_udonbehaviour
+            data:
+              objEncoded: 
+              unityObjects: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 1
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _RemoveOwnership
+        eventId: 97b89e14-04a4-4bf8-ac89-09989dbc226f
+        eventInstance:
+          actionType:
+            directEvent: Event_OnOwnershipTransferred
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: If ownership over this player tracker is transfered, force disable
+              the script. This is used to prevent the owner player leaving causing
+              this tracker to switch to a new owner player. You can remove this depending
+              on your needs.
+        actionInstances:
+        - actionType:
+            directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: 
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AUgBlAHMAZQB0AAU=
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABBgAAAF8AUgBlAHMAZQB0ACcBEAAAAGUAdgBlAG4AdABEAGkAcwBwAGwAYQB5AE4AYQBtAGUAAQYAAABfAFIAZQBzAGUAdAABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAAAAAAAAAAAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAAAAAAAAAAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYAAAAAAAAAAAcFBQ==
+              unityObjects: []
+          multiInput:
+          - isVariable: 1
+            name: This UdonBehaviour
+            variableID: _this_udonbehaviour
+            data:
+              objEncoded: 
+              unityObjects: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _Reset
+        eventId: cd3cdcea-1eee-4d2f-aa04-332eee1013dd
+        eventInstance:
+          actionType:
+            directEvent: Event_Custom
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Disable the Udon script to prevent moving to the location of
+              the owner and reset the transform back to the original location. Respawning
+              is just for this example and you can change this to whatever is necessary
+              for your world.
+        actionInstances:
+        - actionType:
+            directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: 
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+              unityObjects: []
+          multiInput:
+          - isVariable: 1
+            name: This UdonBehaviour
+            variableID: _this_udonbehaviour
+            data:
+              objEncoded: 
+              unityObjects: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: 
+            guid: 27c57960-34bb-4101-845f-d4563679c79d
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _Unnamed
+        eventId: 1ac53a7c-a666-4e33-af90-da0e60e5b41b
+        eventInstance:
+          actionType:
+            directEvent: Event_Start
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: Ensure that this Udon is disabled on start. This is necessary
+              to ensure that Transform.Respawn is initialized correctly.
+        actionInstances:
+        - actionType:
+            directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: 
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+              unityObjects: []
+          multiInput:
+          - isVariable: 1
+            name: This UdonBehaviour
+            variableID: _this_udonbehaviour
+            data:
+              objEncoded: 
+              unityObjects: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      variables:
+      - isVariable: 0
+        name: trackingType
+        variableID: c421e22a-cc48-4e45-88e1-4aaec004d67e
+        data:
+          objEncoded: Ai8AAAAAATUAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBQAGwAYQB5AGUAcgBBAHAAaQArAFQAcgBhAGMAawBpAG4AZwBEAGEAdABhAFQAeQBwAGUALAAgAFYAUgBDAFMARABLAEIAYQBzAGUAAAAAAB4AAAAAAAAAAAU=
+          unityObjects: []
+        type:
+          typeDef: VRC.SDKBase.VRCPlayerApi+TrackingDataType, VRCSDKBase, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        sync: 0
+        showInInspector: 1
+        typeInfo: 0
+        comment:
+          comment: 
+      comment:
+        comment: 'Synced Player Tracker
+
+          Every frame, place this object
+          at the specified tracker location for the local player. To change which
+          item is tracked, select a different type from the drop down next to the
+          variable.
+
+          See PlayerApiExamples scene for usage of this prefab.'
+      expandVariables: 1
+      expandOtherSettings: 1
+      expandSyncSection: 0
+      ignoreEventWarnings: 0
+    udonBehaviour: {fileID: 8923143138955338744}
+--- !u!114 &8923143138955338744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923143138955338747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 2
+  serializedProgramAsset: {fileID: 11400000, guid: 7c2729338f946f643af89c9725b1e3d2,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 922cd53b4742efc489a4b32ab4f27c35, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgcAAAAAAAAAAi8CAAAAAWgAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAVgBSAEMALgBTAEQASwBCAGEAcwBlAC4AVgBSAEMAUABsAGEAeQBlAHIAQQBwAGkAKwBUAHIAYQBjAGsAaQBuAGcARABhAHQAYQBUAHkAcABlACwAIABWAFIAQwBTAEQASwBCAGEAcwBlAF0AXQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAgAAAAYCAAAAAAAAACcBBAAAAHQAeQBwAGUAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABp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
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0
+--- !u!114 &8923143138955338746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923143138955338747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowCollisionOwnershipTransfer: 0
+  ForceKinematicOnRemote: 0
