@@ -15,21 +15,28 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 6bd7b4bfcd871c54eb3c07ac75a228d5,
     type: 2}
   udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
-    .export isEnabled\r\n  .export __10_ref_UnityEngineUIToggle\r\n  .export __11_ref_UnityEngineGameObject\r\n 
-    .export __12_ref_UnityEngineAudioSource\r\n  .export __13_ref_SystemUInt64\r\n 
+    .export isEnabled\r\n  .export __11_ref_UnityEngineUIToggle\r\n  .export __12_ref_UnityEngineGameObject\r\n 
+    .export __13_ref_UnityEngineAudioSource\r\n  .export __14_ref_SystemUInt64\r\n 
     __CyanTrigger_ProgramName_SystemString: %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString:
     %SystemString, null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
-    %SystemUInt32, null\r\n  isEnabled: %SystemBoolean, null\r\n  __10_ref_UnityEngineUIToggle:
-    %UnityEngineUIToggle, null\r\n  __11_ref_UnityEngineGameObject: %UnityEngineGameObject,
-    null\r\n  __12_ref_UnityEngineAudioSource: %UnityEngineAudioSource, null\r\n 
-    __13_ref_SystemUInt64: %SystemUInt64, null\r\n.data_end\r\n\n.code_start\r\n 
-    .export _Toggle\r\n  _Toggle:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __10_ref_UnityEngineUIToggle\r\n   
-    PUSH, isEnabled\r\n    EXTERN, \"UnityEngineUIToggle.__get_isOn__SystemBoolean\"\r\n   
-    PUSH, __11_ref_UnityEngineGameObject\r\n    PUSH, isEnabled\r\n    EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n   
-    PUSH, __12_ref_UnityEngineAudioSource\r\n    PUSH, __13_ref_SystemUInt64\r\n   
+    %SystemUInt32, null\r\n  isEnabled: %SystemBoolean, null\r\n  __10___jump_return_0_SystemUInt32:
+    %SystemUInt32, null\r\n  __11_ref_UnityEngineUIToggle: %UnityEngineUIToggle,
+    null\r\n  __12_ref_UnityEngineGameObject: %UnityEngineGameObject, null\r\n  __13_ref_UnityEngineAudioSource:
+    %UnityEngineAudioSource, null\r\n  __14_ref_SystemUInt64: %SystemUInt64, null\r\n 
+    __15___jump_return_1_SystemUInt32: %SystemUInt32, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _Toggle\r\n  _Toggle:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __10___jump_return_0_SystemUInt32\r\n   
+    JUMP, 0x00000034\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n  .export __intern_event_0_debug_execute\r\n  __intern_event_0_debug_execute:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __11_ref_UnityEngineUIToggle\r\n    PUSH,
+    isEnabled\r\n    EXTERN, \"UnityEngineUIToggle.__get_isOn__SystemBoolean\"\r\n   
+    PUSH, __12_ref_UnityEngineGameObject\r\n    PUSH, isEnabled\r\n    EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, __13_ref_UnityEngineAudioSource\r\n    PUSH, __14_ref_SystemUInt64\r\n   
     EXTERN, \"UnityEngineAudioSource.__Play__SystemUInt64__SystemVoid\"\r\n    PUSH,
     __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
     .export _Unnamed\r\n  _Unnamed:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __15___jump_return_1_SystemUInt32\r\n    JUMP, 0x000000C4\r\n    PUSH, __0_ra_SystemUInt32\r\n   
+    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export __intern_event_1_debug_execute\r\n 
+    __intern_event_1_debug_execute:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
     __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
   assemblyError: 
   triggerHash: B5A3D808AECB430221899DE04BC001C2
@@ -175,7 +182,7 @@ MonoBehaviour:
     ignoreEventWarnings: 0
   publicVariableReferences:
     actionDataIndices:
-    - symbolName: __10_ref_UnityEngineUIToggle
+    - symbolName: __11_ref_UnityEngineUIToggle
       type:
         typeDef: UnityEngine.UI.Toggle, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
           PublicKeyToken=null
@@ -183,7 +190,7 @@ MonoBehaviour:
       actionIndex: 0
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __11_ref_UnityEngineGameObject
+    - symbolName: __12_ref_UnityEngineGameObject
       type:
         typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -191,7 +198,7 @@ MonoBehaviour:
       actionIndex: 1
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __12_ref_UnityEngineAudioSource
+    - symbolName: __13_ref_UnityEngineAudioSource
       type:
         typeDef: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -199,7 +206,7 @@ MonoBehaviour:
       actionIndex: 2
       variableIndex: 0
       multiVariableIndex: 0
-    - symbolName: __13_ref_SystemUInt64
+    - symbolName: __14_ref_SystemUInt64
       type:
         typeDef: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       eventIndex: 0

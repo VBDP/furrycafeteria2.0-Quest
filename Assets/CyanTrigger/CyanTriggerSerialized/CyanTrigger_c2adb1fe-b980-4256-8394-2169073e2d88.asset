@@ -15,16 +15,20 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 08c03ae8698d12049ac1c3b91386ed06,
     type: 2}
   udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
-    .export SoundEffectsVolume\r\n  .export __10_ref_UnityEngineUISlider\r\n  .export
-    __11_ref_UnityEngineAudioSource\r\n  __CyanTrigger_ProgramName_SystemString:
+    .export SoundEffectsVolume\r\n  .export __11_ref_UnityEngineUISlider\r\n  .export
+    __12_ref_UnityEngineAudioSource\r\n  __CyanTrigger_ProgramName_SystemString:
     %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
     null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
-    %SystemUInt32, null\r\n  SoundEffectsVolume: %SystemSingle, null\r\n  __10_ref_UnityEngineUISlider:
-    %UnityEngineUISlider, null\r\n  __11_ref_UnityEngineAudioSource: %UnityEngineAudioSource,
-    null\r\n.data_end\r\n\n.code_start\r\n  .export _sliderChanged\r\n  _sliderChanged:\r\n   
-    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __10_ref_UnityEngineUISlider\r\n    PUSH,
+    %SystemUInt32, null\r\n  SoundEffectsVolume: %SystemSingle, null\r\n  __10___jump_return_0_SystemUInt32:
+    %SystemUInt32, null\r\n  __11_ref_UnityEngineUISlider: %UnityEngineUISlider,
+    null\r\n  __12_ref_UnityEngineAudioSource: %UnityEngineAudioSource, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _sliderChanged\r\n  _sliderChanged:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __10___jump_return_0_SystemUInt32\r\n    JUMP, 0x00000034\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __intern_event_0_debug_execute\r\n  __intern_event_0_debug_execute:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __11_ref_UnityEngineUISlider\r\n    PUSH,
     SoundEffectsVolume\r\n    EXTERN, \"UnityEngineUISlider.__get_value__SystemSingle\"\r\n   
-    PUSH, __11_ref_UnityEngineAudioSource\r\n    PUSH, SoundEffectsVolume\r\n   
+    PUSH, __12_ref_UnityEngineAudioSource\r\n    PUSH, SoundEffectsVolume\r\n   
     EXTERN, \"UnityEngineAudioSource.__set_volume__SystemSingle__SystemVoid\"\r\n   
     PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
   assemblyError: 
@@ -126,7 +130,7 @@ MonoBehaviour:
     ignoreEventWarnings: 0
   publicVariableReferences:
     actionDataIndices:
-    - symbolName: __10_ref_UnityEngineUISlider
+    - symbolName: __11_ref_UnityEngineUISlider
       type:
         typeDef: UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
           PublicKeyToken=null
@@ -134,7 +138,7 @@ MonoBehaviour:
       actionIndex: 0
       variableIndex: 0
       multiVariableIndex: -1
-    - symbolName: __11_ref_UnityEngineAudioSource
+    - symbolName: __12_ref_UnityEngineAudioSource
       type:
         typeDef: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
