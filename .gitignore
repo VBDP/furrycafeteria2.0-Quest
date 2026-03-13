@@ -111,3 +111,9 @@ InitTestScene*.unity*
 [Ff]onts/
 * SDF.asset
 
+Bakery/
+Bakery.meta
+[Bb]akery/
+Lightmaps/
+LightingData.asset
+
