@@ -97,3 +97,43 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# ==============================================================================
+# VRChat & Configuración para evitar Archivos Pesados
+# ==============================================================================
+
+# Almacenamiento local de ClientSim (Preferencias de usuario que no deben subirse)
+/ClientSimStorage/
+
+# Excluir archivos comprimidos grandes
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Excluir archivos de diseño originales crudos (Suelen ser muy pesados, usar mejor PNG/JPG)
+*.psd
+*.psb
+*.ai
+*.xcf
+
+# Excluir archivos de video originales crudos
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# ------------------------------------------------------------------------------
+# MAPAS DE LUZ (LIGHTMAPS) Y SONDAS (REFLECTION PROBES)
+# ------------------------------------------------------------------------------
+# ATENCIÓN: Si descomentas esto, te ahorrarás MUCHÍSIMO espacio, ya que los lightmaps
+# en VRChat pueden pesar cientos de megabytes o gigabytes. Sin embargo, cualquier
+# persona que descargue el repositorio tendrá que volver a "hornear" (bake) las
+# luces en Unity para que el mundo se vea correctamente.
+#
+# Si prefieres evitar subir los lightmaps, descomenta las siguientes líneas:
+ /[Aa]ssets/*/[Ll]ightmap*.exr
+ /[Aa]ssets/*/[Ll]ightmap*.exr.meta
+ /[Aa]ssets/*/[Rr]eflectionProbe*.exr
+ /[Aa]ssets/*/[Rr]eflectionProbe*.exr.meta
