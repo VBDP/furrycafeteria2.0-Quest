@@ -137,3 +137,10 @@ InitTestScene*.unity*
  /[Aa]ssets/*/[Ll]ightmap*.exr.meta
  /[Aa]ssets/*/[Rr]eflectionProbe*.exr
  /[Aa]ssets/*/[Rr]eflectionProbe*.exr.meta
+
+# Archivos de texturas crudas muy pesadas
+*.tga
+*.exr
+# Archivos de fuentes específicas que exceden los 100MB de GitHub
+Assets/TheGuntamixProject/MaldivesCottage/Fonts/NotoSansJP-Medium SDF.asset
+Assets/TheGuntamixProject/MaldivesCottage/AvatarNow/Decoder/Other/Font/Noto_Sans_JP/NotoSansJP-Regular SDF.asset
