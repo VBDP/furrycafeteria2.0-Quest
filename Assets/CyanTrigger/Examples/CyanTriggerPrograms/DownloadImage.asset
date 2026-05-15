@@ -1,0 +1,678 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: DownloadImage
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: ee0eb2ee6ec2f294987de6dcf70a39ee,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export imageURL\r\n  .export material\r\n  .export textureInfo\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject,
+    this\r\n  _this_udonbehaviour: %VRCUdonUdonBehaviour, this\r\n  onImageLoadErrorIVRCImageDownload:
+    %VRCSDK3ImageIVRCImageDownload, null\r\n  onImageLoadSuccessIVRCImageDownload:
+    %VRCSDK3ImageIVRCImageDownload, null\r\n  imageURL: %VRCSDKBaseVRCUrl, null\r\n 
+    material: %UnityEngineMaterial, null\r\n  textureInfo: %VRCSDK3ImageTextureInfo,
+    null\r\n  __imageDownloader: %VRCSDK3ImageVRCImageDownloader, null\r\n  __ag_0_0_SystemString:
+    %SystemString, null\r\n  __16_ref_SystemString: %SystemString, null\r\n  __17___jump_return_0_SystemUInt32:
+    %SystemUInt32, null\r\n  __18_ref_SystemString: %SystemString, null\r\n  __19___jump_return_1_SystemUInt32:
+    %SystemUInt32, null\r\n  __20_local_var_VRCSDK3ImageIVRCImageDownload: %VRCSDK3ImageIVRCImageDownload,
+    null\r\n  __21_local_var_VRCSDK3ImageVRCImageDownloadError: %VRCSDK3ImageVRCImageDownloadError,
+    null\r\n  __22_local_var_SystemString: %SystemString, null\r\n  __23_local_var_SystemString:
+    %SystemString, null\r\n  __24_local_var_SystemString: %SystemString, null\r\n 
+    __25_ref_SystemString: %SystemString, null\r\n  __26_ref_SystemString: %SystemString,
+    null\r\n  __27___jump_return_2_SystemUInt32: %SystemUInt32, null\r\n  __28_ref_SystemString:
+    %SystemString, null\r\n  __29___jump_return_3_SystemUInt32: %SystemUInt32, null\r\n 
+    __30_local_var_SystemBoolean: %SystemBoolean, null\r\n  __31_const_SystemBoolean:
+    %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n  .export __ag_0_0\r\n 
+    __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __ag_0_0_SystemString\r\n   
+    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__Log__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _start\r\n  _start:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __17___jump_return_0_SystemUInt32\r\n   
+    JUMP, 0x00000068\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n  .export _DownloadImage\r\n  _DownloadImage:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __19___jump_return_1_SystemUInt32\r\n   
+    JUMP, 0x000001E4\r\n    PUSH, __imageDownloader\r\n    EXTERN, \"VRCSDK3ImageVRCImageDownloader.__ctor____VRCSDK3ImageVRCImageDownloader\"\r\n   
+    PUSH, __imageDownloader\r\n    PUSH, imageURL\r\n    PUSH, material\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, textureInfo\r\n    PUSH, __20_local_var_VRCSDK3ImageIVRCImageDownload\r\n   
+    EXTERN, \"VRCSDK3ImageVRCImageDownloader.__DownloadImage__VRCSDKBaseVRCUrl_UnityEngineMaterial_VRCUdonCommonInterfacesIUdonEventReceiver_VRCSDK3ImageTextureInfo__VRCSDK3ImageIVRCImageDownload\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _onImageLoadError\r\n  _onImageLoadError:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, onImageLoadErrorIVRCImageDownload\r\n    PUSH, __21_local_var_VRCSDK3ImageVRCImageDownloadError\r\n   
+    EXTERN, \"VRCSDK3ImageIVRCImageDownload.__get_Error__VRCSDK3ImageVRCImageDownloadError\"\r\n   
+    PUSH, __21_local_var_VRCSDK3ImageVRCImageDownloadError\r\n    PUSH, __22_local_var_SystemString\r\n   
+    EXTERN, \"VRCSDK3ImageVRCImageDownloadError.__ToString__SystemString\"\r\n   
+    PUSH, onImageLoadErrorIVRCImageDownload\r\n    PUSH, __23_local_var_SystemString\r\n   
+    EXTERN, \"VRCSDK3ImageIVRCImageDownload.__get_ErrorMessage__SystemString\"\r\n   
+    PUSH, __22_local_var_SystemString\r\n    PUSH, __25_ref_SystemString\r\n    PUSH,
+    __23_local_var_SystemString\r\n    PUSH, __24_local_var_SystemString\r\n    EXTERN,
+    \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __24_local_var_SystemString\r\n    EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _onImageLoadSuccess\r\n  _onImageLoadSuccess:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __26_ref_SystemString\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n   
+    PUSH, __27___jump_return_2_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _onDestroy\r\n  _onDestroy:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __29___jump_return_3_SystemUInt32\r\n    JUMP, 0x000001E4\r\n    PUSH, __0_ra_SystemUInt32\r\n   
+    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _Cleanup\r\n 
+    _Cleanup:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __31_const_SystemBoolean\r\n   
+    PUSH, __30_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, __imageDownloader\r\n   
+    PUSH, __30_local_var_SystemBoolean\r\n    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __30_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000244\r\n    PUSH,
+    __imageDownloader\r\n    EXTERN, \"VRCSDK3ImageVRCImageDownloader.__Dispose__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __imageDownloader\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n   
+    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 0A929D7A92C561BA7F6682A0FCA2DDEF
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Unnamed
+      eventId: 77795ec4-c6a9-40c4-8582-611558cc9499
+      eventInstance:
+        actionType:
+          directEvent: Event_Start
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAF8ARABvAHcAbgBsAG8AYQBkAEkAbQBhAGcAZQAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABDgAAAF8ARABvAHcAbgBsAG8AYQBkAEkAbQBhAGcAZQAnARAAAABlAHYAZQBuAHQARABpAHMAcABsAGEAeQBOAGEAbQBlAAEOAAAAXwBEAG8AdwBuAGwAbwBhAGQASQBtAGEAZwBlAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _DownloadImage
+      eventId: 808f4562-c236-40d8-9ae7-3b0af5520f86
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAF8AQwBsAGUAYQBuAHUAcAAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCAAAAF8AQwBsAGUAYQBuAHUAcAAnARAAAABlAHYAZQBuAHQARABpAHMAcABsAGEAeQBOAGEAbQBlAAEIAAAAXwBDAGwAZQBhAG4AdQBwAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDK3ImageVRCImageDownloader.__ctor____VRCSDK3ImageVRCImageDownloader
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: __imageDownloader
+          variableID: 00bf79e3-176c-41d6-93d5-c2f9266f51e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDK3ImageVRCImageDownloader.__DownloadImage__VRCSDKBaseVRCUrl_UnityEngineMaterial_VRCUdonCommonInterfacesIUdonEventReceiver_VRCSDK3ImageTextureInfo__VRCSDK3ImageIVRCImageDownload
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: __imageDownloader
+          variableID: 00bf79e3-176c-41d6-93d5-c2f9266f51e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: imageURL
+          variableID: 3731255f-d6b3-4f25-888b-d34bbaf4bb4f
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: material
+          variableID: 72e9b2ab-34b9-4b97-99f8-e2418516af5c
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: textureInfo
+          variableID: c7cd08a2-4b4b-493b-ad52-fd26caff3114
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 88691552-4108-4bb4-b62d-7f020d03cc5e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _onImageLoadError
+      eventId: 195dcef9-f68d-4412-a1eb-8e3e618500a8
+      eventInstance:
+        actionType:
+          directEvent: Event_OnImageLoadError
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCSDK3ImageIVRCImageDownload.__get_Error__VRCSDK3ImageVRCImageDownloadError
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onImageLoadErrorIVRCImageDownload
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: ef63bd2d-1155-4e7e-b72a-1cb793776822
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAGkAbQBhAGcAZQBEAG8AdwBuAGwAbwBhAGQARQByAHIAbwByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDK3ImageVRCImageDownloadError.__ToString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: imageDownloadError
+          variableID: ef63bd2d-1155-4e7e-b72a-1cb793776822
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5e8d4674-d09f-4c4d-af3e-f7d58bd4270b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGUAcgByAG8AcgBTAHQAcgBpAG4AZwAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDK3ImageIVRCImageDownload.__get_ErrorMessage__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onImageLoadErrorIVRCImageDownload
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 6c34a8af-a50d-4684-87e7-01e270b0162b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGUAcgByAG8AcgBNAGUAcwBzAGEAZwBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: errorString
+          variableID: 5e8d4674-d09f-4c4d-af3e-f7d58bd4270b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAACAAOgAgAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: errorMessage
+          variableID: 6c34a8af-a50d-4684-87e7-01e270b0162b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 16a2fc0e-f13f-4bb5-a1d3-479d8dd489a2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAHAAcgBpAG4AdABTAHQAcgBpAG4AZwAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineDebug.__Log__SystemObject__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: printString
+          variableID: 16a2fc0e-f13f-4bb5-a1d3-479d8dd489a2
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _onImageLoadSuccess
+      eventId: 287bd6da-b3e9-45aa-a2a4-3f6c3a9de71e
+      eventInstance:
+        actionType:
+          directEvent: Event_OnImageLoadSuccess
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: 
+          guid: 501e9c14-809a-4749-a2e3-934197af210b
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBGAAAAEkAbQBhAGcAZQBEAG8AdwBuAGwAbwBhAGQAZQByADoAIABTAHUAYwBjAGUAcwBzAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _onDestroy
+      eventId: 0c7d32f6-b6e0-424c-a032-a570f7742289
+      eventInstance:
+        actionType:
+          directEvent: Event_OnDestroy
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAF8AQwBsAGUAYQBuAHUAcAAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCAAAAF8AQwBsAGUAYQBuAHUAcAAnARAAAABlAHYAZQBuAHQARABpAHMAcABsAGEAeQBOAGEAbQBlAAEIAAAAXwBDAGwAZQBhAG4AdQBwAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _Cleanup
+      eventId: 4482513d-696e-498e-a531-ce49308227f9
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 22a48b31-4701-469b-bfb1-ea19960d1f8d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: __imageDownloader
+          variableID: 00bf79e3-176c-41d6-93d5-c2f9266f51e6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: isValid
+          variableID: 22a48b31-4701-469b-bfb1-ea19960d1f8d
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDK3ImageVRCImageDownloader.__Dispose__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: __imageDownloader
+          variableID: 00bf79e3-176c-41d6-93d5-c2f9266f51e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDK3ImageVRCImageDownloader__.Set__VRCSDK3ImageVRCImageDownloader__VRCSDK3ImageVRCImageDownloader
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: __imageDownloader
+          variableID: 00bf79e3-176c-41d6-93d5-c2f9266f51e6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFQAAAF8AVgBSAEMASQBtAGEAZwBlAEQAbwB3AG4AbABvAGEAZABlAHIAXwAxAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 1
+      name: imageURL
+      variableID: 3731255f-d6b3-4f25-888b-d34bbaf4bb4f
+      data:
+        objEncoded: 
+        unityObjects: []
+      type:
+        typeDef: VRC.SDKBase.VRCUrl, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 1
+      name: material
+      variableID: 72e9b2ab-34b9-4b97-99f8-e2418516af5c
+      data:
+        objEncoded: 
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 1
+      name: textureInfo
+      variableID: c7cd08a2-4b4b-493b-ad52-fd26caff3114
+      data:
+        objEncoded: Ai8AAAAAASMAAABWAFIAQwAuAFMARABLADMALgBJAG0AYQBnAGUALgBUAGUAeAB0AHUAcgBlAEkAbgBmAG8ALAAgAFYAUgBDAFMARABLADMAAAAAAB0BCQAAAFcAcgBhAHAATQBvAGQAZQBVAAAAAAAAAAAAHQEJAAAAVwByAGEAcABNAG8AZABlAFYAAAAAAAAAAAAdAQkAAABXAHIAYQBwAE0AbwBkAGUAVwAAAAAAAAAAAB0BCgAAAEYAaQBsAHQAZQByAE0AbwBkAGUAAQAAAAAAAAAXAQoAAABBAG4AaQBzAG8ATABlAHYAZQBsAAEAAAAnARAAAABNAGEAdABlAHIAaQBhAGwAUAByAG8AcABlAHIAdAB5AAEIAAAAXwBNAGEAaQBuAFQAZQB4ACsBDwAAAEcAZQBuAGUAcgBhAHQAZQBNAGkAcABNAGEAcABzAAAF
+        unityObjects: []
+      type:
+        typeDef: VRC.SDK3.Image.TextureInfo, VRCSDK3, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 1
+      name: __imageDownloader
+      variableID: 00bf79e3-176c-41d6-93d5-c2f9266f51e6
+      data:
+        objEncoded: 
+        unityObjects: []
+      type:
+        typeDef: VRC.SDK3.Image.VRCImageDownloader, VRCSDK3, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 0
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - imageURL
+    - material
+    - textureInfo
+    userVariableTypes:
+    - typeDef: VRC.SDKBase.VRCUrl, VRCSDKBase, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: VRC.SDK3.Image.TextureInfo, VRCSDK3, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 0

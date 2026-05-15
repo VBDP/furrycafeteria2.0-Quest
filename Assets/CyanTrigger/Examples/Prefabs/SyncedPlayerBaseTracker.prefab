@@ -1,0 +1,815 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2009314204827528635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2009314204827528634}
+  - component: {fileID: 2009314204827528636}
+  - component: {fileID: 2009314204827528637}
+  m_Layer: 0
+  m_Name: SyncedPlayerBaseTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2009314204827528634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009314204827528635}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009314204827528636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009314204827528635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd4a7956009f7d429a09b8371329c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerInstance:
+    proximity: 2
+    interactText: Use
+    triggerDataInstance:
+      version: 6
+      updateOrder: 0
+      autoSetSyncMode: 1
+      programSyncMode: 0
+      programName: 
+      events:
+      - name: 
+        eventId: ac95fef5-31bb-4511-a03c-b25c83355674
+        eventInstance:
+          actionType:
+            directEvent: Event_Update
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Every frame, set position and rotation of this object to the
+              position of the tracked player's base position.
+        actionInstances:
+        - actionType:
+            directEvent: CyanTriggerSpecial_If
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: Only update the tracker position if the tracked player is valid.
+        - actionType:
+            directEvent: CyanTriggerSpecial_Condition
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: 
+            variableID: ed7393c7-64c2-4f11-9a16-13a09637aabe
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayer
+            variableID: d74fb0d5-f53a-4754-a2cb-d700df8e8d03
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: isValid
+            variableID: ed7393c7-64c2-4f11-9a16-13a09637aabe
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_ConditionBody
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: 
+            guid: 8e1a0990-dcd5-4b71-ba5c-03af09b76323
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayer
+            variableID: d74fb0d5-f53a-4754-a2cb-d700df8e8d03
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: This Transform
+            variableID: _this_transform
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Update the position of this object based on the tracked player's
+              base position.
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _ClaimOwnership
+        eventId: 550bced8-f9cf-4ad3-b569-3d55ce4d3cd1
+        eventInstance:
+          actionType:
+            directEvent: Event_Custom
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Claim ownership over this player tracker, making it follow the
+              local player. Call this if you want to start tracking a specific local
+              player.
+        actionInstances:
+        - actionType:
+            directEvent: VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: This GameObject
+            variableID: _this_gameobject
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _RemoveOwnership
+        eventId: 97b89e14-04a4-4bf8-ac89-09989dbc226f
+        eventInstance:
+          actionType:
+            directEvent: Event_Custom
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Call this Event if the local player is tracked and they do not
+              want to be tracked any more. If any other player tries to call this,
+              it will be ignored.
+        actionInstances:
+        - actionType:
+            directEvent: CyanTriggerSpecial_If
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_Condition
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: 
+            variableID: 4275bceb-a9af-404d-a252-c60fc01258a1
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFgAAAGkAcwBDAHUAcgByAGUAbgB0AFQAcgBhAGMAawBlAGQAUABsAGEAeQBlAHIABQ==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: 
+            variableID: b6812b6f-6a44-4265-8f2a-87457454b4fa
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDQAAAGwAbwBjAGEAbABQAGwAYQB5AGUAcgBJAGQABQ==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+              unityObjects: []
+          - isVariable: 1
+            name: localPlayerId
+            variableID: b6812b6f-6a44-4265-8f2a-87457454b4fa
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+              unityObjects: []
+          - isVariable: 1
+            name: isCurrentTrackedPlayer
+            variableID: 4275bceb-a9af-404d-a252-c60fc01258a1
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_ConditionBody
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: This GameObject
+            variableID: _this_gameobject
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAY/////wU=
+              unityObjects: []
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGkAbgB0AFYAYQByAAU=
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _RemoveOwnership
+        eventId: f3743efc-9c32-4997-b4e6-ee076118abb6
+        eventInstance:
+          actionType:
+            directEvent: Event_OnPlayerLeft
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Check when a player leaves if that player was the tracked player.
+              If so, set no player as tracked and reset this Tracker. Note that only
+              the owner calls this method to prevent all players from doing this
+              check.
+        actionInstances:
+        - actionType:
+            directEvent: CyanTriggerSpecial_If
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_Condition
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: 
+            variableID: 75a67fd3-ae15-49bf-8484-68af40d95736
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFgAAAGkAcwBDAHUAcgByAGUAbgB0AFQAcgBhAGMAawBlAGQAUABsAGEAeQBlAHIABQ==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: onPlayerLeftPlayer
+            variableID: onPlayerLeftPlayer
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: 
+            variableID: 5bcf71ea-9be7-477f-bc87-55b644a69d58
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAHAAbABhAHkAZQByAEwAZQBmAHQASQBkAAU=
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+              unityObjects: []
+          - isVariable: 1
+            name: playerLeftId
+            variableID: 5bcf71ea-9be7-477f-bc87-55b644a69d58
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+              unityObjects: []
+          - isVariable: 1
+            name: isCurrentTrackedPlayer
+            variableID: 75a67fd3-ae15-49bf-8484-68af40d95736
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_ConditionBody
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: Local Player
+            variableID: _this_local_player
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          - isVariable: 1
+            name: This GameObject
+            variableID: _this_gameobject
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAY/////wU=
+              unityObjects: []
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGkAbgB0AFYAYQByAAU=
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 1
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _Unnamed
+        eventId: c6f45e0e-46ee-45c3-9391-95c76cb5e0d8
+        eventInstance:
+          actionType:
+            directEvent: Event_OnVariableChanged
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAGAwAAAAAAAAAoARUAAABfAG8AbABkAF8AXwB0AHIAYQBjAGsAZQBkAFAAbABhAHkAZQByAEkAZAAoAVkAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiACwAIABWAGUAcgBzAGkAbwBuAD0ANAAuADAALgAwAC4AMAAsACAAQwB1AGwAdAB1AHIAZQA9AG4AZQB1AHQAcgBhAGwALAAgAFAAdQBiAGwAaQBjAEsAZQB5AFQAbwBrAGUAbgA9AGIANwA3AGEANQBjADUANgAxADkAMwA0AGUAMAA4ADkAKAEkAAAAMwBmADQAOAAzADUAMAA0AC0ANAA1AGEAYgAtADQAYwBmADkALQA4AGMAZQBmAC0AZQAzADYAYgA2ADMANwBjADIANgA1AGMABwU=
+              unityObjects: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: When the trackedPlayerId variable changes, get the player api
+              this represents. If the id is set to the invalid id of -1, reset this
+              tracker.
+        actionInstances:
+        - actionType:
+            directEvent: VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+              unityObjects: []
+          - isVariable: 1
+            name: _trackedPlayer
+            variableID: d74fb0d5-f53a-4754-a2cb-d700df8e8d03
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_If
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_Condition
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: 
+            variableID: 30324dd9-e515-43b6-b7b6-a6ced194c713
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGkAbgB2AGEAbABpAGQASQBkAAU=
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+            guid: 
+          inputs:
+          - isVariable: 1
+            name: _trackedPlayerId
+            variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAY/////wU=
+              unityObjects: []
+          - isVariable: 1
+            name: invalidId
+            variableID: 30324dd9-e515-43b6-b7b6-a6ced194c713
+            data:
+              objEncoded: Lg==
+              unityObjects: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_ConditionBody
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+            guid: 
+          inputs:
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: 
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AUgBlAHMAZQB0AAU=
+              unityObjects: []
+          - isVariable: 0
+            name: 
+            variableID: 
+            data:
+              objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABBgAAAF8AUgBlAHMAZQB0ACcBEAAAAGUAdgBlAG4AdABEAGkAcwBwAGwAYQB5AE4AYQBtAGUAAQYAAABfAFIAZQBzAGUAdAABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAAAAAAAAAAAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAAAAAAAAAAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYAAAAAAAAAAAcFBQ==
+              unityObjects: []
+          multiInput:
+          - isVariable: 1
+            name: This UdonBehaviour
+            variableID: _this_udonbehaviour
+            data:
+              objEncoded: 
+              unityObjects: []
+          expanded: 0
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        - actionType:
+            directEvent: CyanTriggerSpecial_BlockEnd
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 1
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      - name: _Reset
+        eventId: 7c1ce439-314d-40c6-80db-a3b1e3d0c401
+        eventInstance:
+          actionType:
+            directEvent: Event_Custom
+            guid: 
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: Reset this tracker. This is called when the tracked player is
+              set invalid. For this example, resetting the tracker will respawn the
+              object back to its original location. You can handle resetting however
+              you need.
+        actionInstances:
+        - actionType:
+            directEvent: 
+            guid: 27c57960-34bb-4101-845f-d4563679c79d
+          inputs: []
+          multiInput: []
+          expanded: 0
+          comment:
+            comment: 
+        eventOptions:
+          userGate: 0
+          userGateExtraData: []
+          broadcast: 0
+          delay: 0
+          replay: 0
+        expanded: 1
+      variables:
+      - isVariable: 0
+        name: _trackedPlayerId
+        variableID: 3f483504-45ab-4cf9-8cef-e36b637c265c
+        data:
+          objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAY/////wU=
+          unityObjects: []
+        type:
+          typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        sync: 1
+        showInInspector: 1
+        typeInfo: 0
+        comment:
+          comment: The id of the player that is tracked. If set to -1, then no player
+            is being tracked. Since VRCPlayerApi variables cannot be synced directly,
+            the player id is synced instead.
+      - isVariable: 0
+        name: _trackedPlayer
+        variableID: d74fb0d5-f53a-4754-a2cb-d700df8e8d03
+        data:
+          objEncoded: Lg==
+          unityObjects: []
+        type:
+          typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        sync: 0
+        showInInspector: 1
+        typeInfo: 0
+        comment:
+          comment: The player currently being tracked. This will be updated whenever
+            the tracked id is changed.
+      comment:
+        comment: 'Synced Player Base Tracker
+
+          Every frame, place this object
+          at the base location of the local player.
+
+          See PlayerApiExamples
+          scene for usage of this prefab.'
+      expandVariables: 1
+      expandOtherSettings: 1
+      expandSyncSection: 0
+      ignoreEventWarnings: 0
+    udonBehaviour: {fileID: 2009314204827528637}
+--- !u!114 &2009314204827528637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009314204827528635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 3
+  serializedProgramAsset: {fileID: 11400000, guid: 7c2729338f946f643af89c9725b1e3d2,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 922cd53b4742efc489a4b32ab4f27c35, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgcAAAAAAAAAAi8CAAAAAUoAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiAF0AXQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAgAAAAYCAAAAAAAAACcBBAAAAHQAeQBwAGUAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAJwEKAAAAUwB5AG0AYgBvAGwATgBhAG0AZQABJgAAAF8AXwBDAHkAYQBuAFQAcgBpAGcAZwBlAHIA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
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0
