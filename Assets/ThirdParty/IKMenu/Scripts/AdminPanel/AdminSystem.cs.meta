@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: b33614fe04090784a93d21ab75f38334
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _udonSharpBackingUdonBehaviour: {instanceID: 0}
+  - adminList: {fileID: 4900000, guid: 138921fec0e1e4348b6b9a19adf3415b, type: 3}
+  - bannedList: {fileID: 4900000, guid: cd8916ea798607b43a62fec12cd27a6f, type: 3}
+  - skyMat: {fileID: 2100000, guid: d31da17bf0528414299674c613576e53, type: 2}
+  - result: {instanceID: 0}
+  - adminSystemPrefab: {instanceID: 0}
+  - hud: {instanceID: 0}
+  - avatarPedestal: {instanceID: 0}
+  - mapRoot: {instanceID: 0}
+  - screen: {instanceID: 0}
+  - chatManager: {instanceID: 0}
+  - mainCamera: {instanceID: 0}
+  - key: {fileID: 4900000, guid: b19f225266da6dd4c8f41fc907643e99, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

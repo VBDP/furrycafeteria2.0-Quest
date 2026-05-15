@@ -145,6 +145,9 @@ InitTestScene*.unity*
 Assets/TheGuntamixProject/MaldivesCottage/Fonts/NotoSansJP-Medium SDF.asset
 Assets/TheGuntamixProject/MaldivesCottage/AvatarNow/Decoder/Other/Font/Noto_Sans_JP/NotoSansJP-Regular SDF.asset
 
+# Archivos de Bakery que exceden los 100MB de GitHub
+Assets/Editor/x64/Bakery/cudnn64_7.dll
+
 # ------------------------------------------------------------------------------
 # BAKERY GPU LIGHTMAPPER
 # ------------------------------------------------------------------------------

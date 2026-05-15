@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: c0f8d8d7ed84d8646b391d63d0459b03
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _udonSharpBackingUdonBehaviour: {instanceID: 0}
+  - playersRoot: {instanceID: 0}
+  - playerButton: {instanceID: 0}
+  - adminSystem: {instanceID: 0}
+  - functions: {instanceID: 0}
+  - dangerActions: {instanceID: 0}
+  - logsText: {instanceID: 0}
+  - adminList: {fileID: 4900000, guid: 138921fec0e1e4348b6b9a19adf3415b, type: 3}
+  - key: {fileID: 4900000, guid: b19f225266da6dd4c8f41fc907643e99, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

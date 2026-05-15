@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DisableOnQuest
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Nameplates
+    uniqueID: 2450873877
+    locked: 0
+  - name: UI
+    uniqueID: 7711475
+    locked: 0
+  - name: Popup
+    uniqueID: 3286212389
     locked: 0

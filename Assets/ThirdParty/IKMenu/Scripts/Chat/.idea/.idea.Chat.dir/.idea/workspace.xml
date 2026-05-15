@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0df8d289-51ac-4232-a397-dee7916de2fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Art/Materials/Old Materials/Anuncio1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Art/Materials/Old Materials/Anuncio1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Prefabs/Islands/Fountain Island.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Prefabs/Islands/Fountain Island.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Scenes/FurryParadise.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Scenes/FurryParadise.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/00bcc48e3cca3cc4cac4c5a091733a71.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/00bcc48e3cca3cc4cac4c5a091733a71.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/00d5ed78f650b24479996c2229b7e3d6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/00d5ed78f650b24479996c2229b7e3d6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/0bcdf45d45ca0be468c4336945ca0a1d.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/0bcdf45d45ca0be468c4336945ca0a1d.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/1064dc79ec16c944793e0bfc45718c46.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/1064dc79ec16c944793e0bfc45718c46.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/111765fc3c115894590e1ac5449b5925.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/111765fc3c115894590e1ac5449b5925.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/13a6f181596d6094c8b946028f390ace.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/13a6f181596d6094c8b946028f390ace.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/146e8923535220d4689bb1bef66d6839.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/146e8923535220d4689bb1bef66d6839.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/1974af287f92b0749a2f7f17231d3b00.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/1974af287f92b0749a2f7f17231d3b00.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/1d35ce63133cdc44fabd8ce05e13d2b6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/1d35ce63133cdc44fabd8ce05e13d2b6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/29bd21032c7bca44b9b818398771d5f0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/29bd21032c7bca44b9b818398771d5f0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/2b8a30199171575429ffcbc74d5233d2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/2b8a30199171575429ffcbc74d5233d2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/2c57b6963c082a144b0311246540719a.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/2c57b6963c082a144b0311246540719a.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/325baefe0e659934e9903e4b8235c861.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/325baefe0e659934e9903e4b8235c861.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/361ba7f191807614ab2e57851dbcddb7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/361ba7f191807614ab2e57851dbcddb7.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/3bed6d9b99cd8fb4198c4739bb4e8e4d.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/3bed6d9b99cd8fb4198c4739bb4e8e4d.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/3e3a985dc1775fc47b7a4c8a485aa989.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/3e3a985dc1775fc47b7a4c8a485aa989.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/40c101e29c6427347aa2a2c326e1325b.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/40c101e29c6427347aa2a2c326e1325b.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/470765fc3c115894590e1ac5449b5925.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/470765fc3c115894590e1ac5449b5925.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/48398abedabbc784788dc71a89451f04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/48398abedabbc784788dc71a89451f04.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/4de624d2155a0374796e8de1fab739e0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/4de624d2155a0374796e8de1fab739e0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/567020c04eb1f4b4ea28e29eded29ee3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/567020c04eb1f4b4ea28e29eded29ee3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/5896e31cb82659c4182c31c13343f974.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/5896e31cb82659c4182c31c13343f974.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/602c9c7f38af11e44acb71e88557d33d.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/602c9c7f38af11e44acb71e88557d33d.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/613bc3c8079e6d04a853d44036b70d36.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/613bc3c8079e6d04a853d44036b70d36.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/638b7ba182e1be2469240ccd8ec34157.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/638b7ba182e1be2469240ccd8ec34157.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/65137fd6a66833f4a94ceee6d87ce280.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/65137fd6a66833f4a94ceee6d87ce280.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/6563634f1ad07a544ae7bdd00ef6b840.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/6563634f1ad07a544ae7bdd00ef6b840.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/69753ebebf7171b4589cc97cada4e6a0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/69753ebebf7171b4589cc97cada4e6a0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/6de0f696e11aefc48b12a4a645826c2b.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/6de0f696e11aefc48b12a4a645826c2b.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/7b4f4d33808345d4ca10c7267df9cc79.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/7b4f4d33808345d4ca10c7267df9cc79.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/80df79815ac3b494592c5da022afd2cf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/80df79815ac3b494592c5da022afd2cf.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/905104020868932469f33458578686f6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/905104020868932469f33458578686f6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/9af6b5f3459408944a250dd1b2b510a3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/9af6b5f3459408944a250dd1b2b510a3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/9cafb003b11364649b4191683bd297b2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/9cafb003b11364649b4191683bd297b2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/9dc17e2102f14574e921629b752391f4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/9dc17e2102f14574e921629b752391f4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/abeff3e8155d8a348afd37b86a8f7ce5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/abeff3e8155d8a348afd37b86a8f7ce5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/b41adc5e78beff94bace27d7129e70cc.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/b41adc5e78beff94bace27d7129e70cc.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/bca82d494293bab4caea4b1449213174.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/bca82d494293bab4caea4b1449213174.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/cac308b897ff0244092e63a1a9138aa8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/cac308b897ff0244092e63a1a9138aa8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/d8185ef9d5a307c469004a596f0492c6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/d8185ef9d5a307c469004a596f0492c6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/da81a429f303a3749a8d7651aac875a0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/da81a429f303a3749a8d7651aac875a0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/e9b544610899b644c8396e19baa7ba11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../SerializedUdonPrograms/e9b544610899b644c8396e19baa7ba11.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminPanel/AdminSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminPanel/AdminSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdminPanel/CamTex.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminPanel/CamTex.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Packages/ReimajoBoothAssets/AdminTool/Scripts/PickupSync C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Packages/ReimajoBoothAssets/AdminTool/Scripts/PickupSync C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Prefabs/PosterSystem/Materiales Posters/Poster 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Prefabs/PosterSystem/Materiales Posters/Poster 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Prefabs/QvPen/UdonAsset/QvPen_Pen.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Prefabs/QvPen/UdonAsset/QvPen_Pen.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Prefabs/TsunaMoo/Store/AmpMirror/Materials/TsunaMirror vO.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Prefabs/TsunaMoo/Store/AmpMirror/Materials/TsunaMirror vO.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Prefabs/TsunaMoo/Store/AmpMirror/Materials/TsunaMirror vT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Prefabs/TsunaMoo/Store/AmpMirror/Materials/TsunaMirror vT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/00_UdonChips/SCRIPT/UdonChips Udon C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/00_UdonChips/SCRIPT/UdonChips Udon C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/01_UdonChipsText/SCRIPT/UdonChipsMoneyText.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/01_UdonChipsText/SCRIPT/UdonChipsMoneyText.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/02_UdonChipsCoin/SCRIPT/UdonChipsInteractToGet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/02_UdonChipsCoin/SCRIPT/UdonChipsInteractToGet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/02_UdonChipsCoin/SCRIPT/UdonChipsTouchToGet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/02_UdonChipsCoin/SCRIPT/UdonChipsTouchToGet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/InstantShop_ObjectPool.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/InstantShop_ObjectPool.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/InstantShop_ToggleActive.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/InstantShop_ToggleActive.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/Despawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/Despawner.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsInstantShop_ObjectPool.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsInstantShop_ObjectPool.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsInstantShop_ToggleActive.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsInstantShop_ToggleActive.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsObjectPool.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsObjectPool.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsShopAnimator.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/03_UdonChipsShop/SCRIPT/UdonChipsShopAnimator.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/04_UdonChipsGate/SCRIPT/UdonChipsGate C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/04_UdonChipsGate/SCRIPT/UdonChipsGate C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/05_UdonChipsInteractGain/SCRIPT/UdonChipsInteractGain Udon C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/05_UdonChipsInteractGain/SCRIPT/UdonChipsInteractGain Udon C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/05_UdonChipsInteractGain/UdonChipsInteractGain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/05_UdonChipsInteractGain/UdonChipsInteractGain.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/06_UdonChipsMoveSpeed/SCRIPT/UdonChipsMoveSpeed.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/06_UdonChipsMoveSpeed/SCRIPT/UdonChipsMoveSpeed.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/07_UdonChipsAutoGain/SCRIPT/UdonChipsAutoGain Udon C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/07_UdonChipsAutoGain/SCRIPT/UdonChipsAutoGain Udon C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/101eb79e163fee14098dad2b4800a290.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/101eb79e163fee14098dad2b4800a290.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/396020c6d6a9b0848a13c52375bd4906.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/396020c6d6a9b0848a13c52375bd4906.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/4a721b0b8bd3dac43a425a246197e3e4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/4a721b0b8bd3dac43a425a246197e3e4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/61a58e0e46706724eba7245357c639e8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/61a58e0e46706724eba7245357c639e8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/681f4a1d222fa90429b6b651a8c1dec4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/681f4a1d222fa90429b6b651a8c1dec4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/adca2628c37dd054e9cf7a3052edf171.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/adca2628c37dd054e9cf7a3052edf171.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/c16ef46ef23950f4fa1531eaf156b9a3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/c16ef46ef23950f4fa1531eaf156b9a3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/c266c8322c0c75349b2f2d9a1c44aec1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/c266c8322c0c75349b2f2d9a1c44aec1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/e2d84dc61eda7104f8b5b4d5ad1a7d31.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/e2d84dc61eda7104f8b5b4d5ad1a7d31.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/edc9a85133e54d04faa1fdede78ac03b.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/edc9a85133e54d04faa1fdede78ac03b.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/edfb3b48423f6334c90c11be47a6708b.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/edfb3b48423f6334c90c11be47a6708b.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/f0548a02a92d9564db12f89e3c3da402.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/f0548a02a92d9564db12f89e3c3da402.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/f507e78cf91c40442b1bd9c16581b6e5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/SerializedUdonPrograms/f507e78cf91c40442b1bd9c16581b6e5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster/PREFAB/CashBlaster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster/PREFAB/CashBlaster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster/SCRIPT/CashBlaster  Udon C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster/SCRIPT/CashBlaster  Udon C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster/SCRIPT/Gun_RestrictedArea Udon C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster/SCRIPT/Gun_RestrictedArea Udon C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster_Set.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/CashBlaster_Set.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/PREFAB/MoneyTarget_OneShot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/PREFAB/MoneyTarget_OneShot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/PREFAB/MoneyTarget_Recovery.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/PREFAB/MoneyTarget_Recovery.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/PREFAB/MoneyTarget_Triple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/PREFAB/MoneyTarget_Triple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/SCRIPT/MoneyTarget Udon C# Program Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/MoneyTarget/SCRIPT/MoneyTarget Udon C# Program Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/SerializedUdonPrograms/0cc37a3c9dc2f49408cb24a15af35923.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/SerializedUdonPrograms/0cc37a3c9dc2f49408cb24a15af35923.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/SerializedUdonPrograms/5436568ea3b032841805e5d21204419f.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/SerializedUdonPrograms/5436568ea3b032841805e5d21204419f.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/SerializedUdonPrograms/c1e343f9aefd37b4fba71d57def984aa.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../UdonChips/VirtualFoxDesignStudio/UdonGimick/CashBlaster_Target/SerializedUdonPrograms/c1e343f9aefd37b4fba71d57def984aa.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video/Runtime/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video/Runtime/Prefabs/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video/Runtime/Prefabs/UI/Internal.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video/Runtime/Prefabs/UI/Internal/Playlist Entry.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/PrefabBuild/Packages/com.texelsaur.video/Runtime/Prefabs/UI/Internal/Playlist Entry.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/BoneFollower.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/BoneFollower.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/InteractToggle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/InteractToggle.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/PlayerModSetter.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/PlayerModSetter.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/Synced/GlobalToggleObject.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/Synced/GlobalToggleObject.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/Synced/MasterToggleObject.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/Synced/MasterToggleObject.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/TrackingDataFollower.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/TrackingDataFollower.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/WorldAudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../UdonSharp/UtilityScripts/WorldAudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ProjectSettings/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ProjectSettings/AudioManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ProjectSettings/QualitySettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../AdminPanel/AdminSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2frWnKltce3DvQ4zVt16GG3Mfxm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\vicen\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\vicen\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\vicen\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0df8d289-51ac-4232-a397-dee7916de2fe" name="Changes" comment="" />
+      <created>1714559844158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714559844158</updated>
+      <workItem from="1714559845228" duration="1914000" />
+      <workItem from="1714638696229" duration="234000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
