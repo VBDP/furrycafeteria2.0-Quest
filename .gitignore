@@ -144,3 +144,21 @@ InitTestScene*.unity*
 # Archivos de fuentes específicas que exceden los 100MB de GitHub
 Assets/TheGuntamixProject/MaldivesCottage/Fonts/NotoSansJP-Medium SDF.asset
 Assets/TheGuntamixProject/MaldivesCottage/AvatarNow/Decoder/Other/Font/Noto_Sans_JP/NotoSansJP-Regular SDF.asset
+
+# ------------------------------------------------------------------------------
+# BAKERY GPU LIGHTMAPPER
+# ------------------------------------------------------------------------------
+# Archivos temporales de Bakery generados al hornear
+~bakeryNode*.bin
+~fttrace*.bin
+ftrace*.txt
+# Datos de geometría temporales comprimidos por Bakery
+*.lz4
+*.lz4.meta
+# Mapas de luz y datos volumétricos generados (Descomenta para ignorar)
+ BakeryLightmap*.png
+ BakeryLightmap*.png.meta
+ BakeryLightmap*.asset
+ BakeryLightmap*.asset.meta
+ BakerySector*.asset
+ BakerySector*.asset.meta
